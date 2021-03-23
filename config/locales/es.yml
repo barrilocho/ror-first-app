@@ -1,0 +1,11 @@
+---
+es:
+  hello: Hello world
+  users:
+    first_name: Nombre(s)
+    form:
+      about_me: Sobre mi
+      address: Dirección
+      button_create_user: Crear Usuario
+      last_name: Apellido
+      phone: Telefono
