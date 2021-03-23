@@ -1,0 +1,14 @@
+
+= simple_form_for(@book) do |f|
+  = f.error_notification 
+  = f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present?
+
+  .form-inputs 
+    = f.input :title, label: 'Titulo'
+    = f.input :author, label: 'Autor'
+    = f.input :description, label: 'Descripción'
+    = f.input :isbn, label: 'identificador'
+    = f.input :pages_count, label: 'Paginas'
+    
+  .form-actions 
+    = f.button :submit
